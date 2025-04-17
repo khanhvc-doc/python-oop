@@ -3,11 +3,12 @@
 o	Thuộc tính: ho_ten, tuoi, gioi_tinh
 o	Phương thức: __init__, __str__, hien_thi_thong_tin() (hiển thị thông tin cơ bản)
 
-## Bài 2 – Lớp SinhVien kế thừa ConNguoi, và dùng Interface (Abstract Base Class)
-Điểm cần lưu ý:
-SinhVien là lớp trung gian kế thừa ConNguoi
-SinhVien có thêm thuộc tính ma_sinh_vien
-get_diem() và xep_loai() được định nghĩa là phương thức trừu tượng (abstract) — để các lớp con như SinhVienIT, SinhVienKD triển khai.
+## Bài 2
+- Lớp SinhVien kế thừa ConNguoi, và dùng Interface (Abstract Base Class)
+* Điểm cần lưu ý:
+- - SinhVien là lớp trung gian kế thừa ConNguoi
+- - SinhVien có thêm thuộc tính ma_sinh_vien
+- - get_diem() và xep_loai() được định nghĩa là phương thức trừu tượng (abstract) — để các lớp con như SinhVienIT, SinhVienKD triển khai.
 
 ## Bài 3:
 - Kế thừa lớp SinhVien
@@ -25,7 +26,7 @@ get_diem() và xep_loai() được định nghĩa là phương thức trừu tư
 - Kế thừa từ lớp SinhVien
 - Bổ sung thuộc tính: diem_X, diem_Y, diem_Z
 - Cài đặt:
-- get_diem() = diem_X * 0.2 + diem_Y * 0.3 + diem_Z * 0.5
+    get_diem() = diem_X * 0.2 + diem_Y * 0.3 + diem_Z * 0.5
 - xep_loai():
     ≥ 8.5: Giỏi
     ≥ 7.0: Khá
