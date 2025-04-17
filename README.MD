@@ -19,3 +19,15 @@ get_diem() và xep_loai() được định nghĩa là phương thức trừu tư
     ≥ 7.0: Khá
     ≥ 5.5: Trung bình
     < 5.5: Yếu
+
+## Bài 4:
+* SinhVienKD (Sinh viên khối Kinh Doanh) kế thừa từ SinhVien, tương tự như SinhVienIT, nhưng sử dụng công thức tính điểm khác.
+- Kế thừa từ lớp SinhVien
+- Bổ sung thuộc tính: diem_X, diem_Y, diem_Z
+- Cài đặt:
+- get_diem() = diem_X * 0.2 + diem_Y * 0.3 + diem_Z * 0.5
+- xep_loai():
+    ≥ 8.5: Giỏi
+    ≥ 7.0: Khá
+    ≥ 6.0: Trung bình
+    < 6.0: Yếu
