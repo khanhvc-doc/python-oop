@@ -95,3 +95,19 @@ Thu nhập = lương cơ bản * hệ số + phụ cấp
 Phúc lợi = 1 triệu + 100k * năm công tác
 
 Thực lãnh: theo công thức chung
+
+
+**NHẬN XÉT**:
+Việc dùng thuộc tính `tuoi` là đơn giản để bắt đầu, nhưng không bền vững theo thời gian, vì:
+- Tuổi thay đổi theo năm.
+- Phải cập nhật thủ công mỗi năm.
+- Không rõ thời điểm tuổi được cập nhật (mất tính chính xác nếu dùng trong báo cáo).
+
+Giải pháp OOP tốt hơn: Dùng ngay_sinh hoặc nam_sinh
+- Thuộc tính gốc: ngay_sinh (datetime.date) hoặc nam_sinh (int)
+- Khi cần tính tuổi, dùng một phương thức: get_tuoi()
+
+Gợi ý tinh chỉnh: 
+- Tinh chỉnh class ConNguoi bai01_connguoi.py
+- Xem lại các class có import class ConNguoi theo file mới cập nhật (hoặc ghi đè class cũ)
+- Thay dữ liệu vào là tuổi bằng ngày sinh
