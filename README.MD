@@ -58,3 +58,15 @@ o	Phương thức: __init__, __str__, hien_thi_thong_tin() (hiển thị thông 
 - Công thức thu nhập:
 - - thu_nhap = luong_co_ban + doanh_so * hoa_hong 
 - - thực lãnh = thu nhập - thuế - bảo hiểm + phúc lợi
+
+## Bài 8: kế thừa từ NhanVien
+- Thuộc tính bổ sung:
+- - phu_cap_trach_nhiem: float
+- - he_so_chuc_vu: float – dùng để nhân với lương cơ bản
+- - so_nam_cong_tac: int – ảnh hưởng đến phúc lợi
+
+Các phương thức:
+- - get_thu_nhap() = luong_co_ban * he_so_chuc_vu + phu_cap_trach_nhiem
+- - get_phuc_loi() = 1_000_000 + so_nam_cong_tac * 100_000
+- - get_thue() và get_bao_hiem() như trước
+- - hien_thi_chi_tiet() hiển thị toàn bộ
