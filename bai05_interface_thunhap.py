@@ -12,3 +12,13 @@ class IThuNhap(ABC):
     def get_thue(self) -> float:
         """Tính thuế thu nhập (có thể dựa trên thu nhập)"""
         pass
+    
+    @abstractmethod
+    def get_bao_hiem(self) -> float:
+        """Tính khoản bảo hiểm cần đóng"""
+        pass
+
+    @abstractmethod
+    def get_phuc_loi(self) -> float:
+        """Tiền phúc lợi được cộng thêm vào lương (nếu có)"""
+        pass

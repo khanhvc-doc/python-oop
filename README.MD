@@ -38,6 +38,8 @@ o	Phương thức: __init__, __str__, hien_thi_thong_tin() (hiển thị thông 
 - Thêm thuộc tính:
 - - ma_nhan_vien
 - - luong_co_ban
-- Định nghĩa 2 phương thức trừu tượng (interface):
+- Định nghĩa 2 phương thức trừu tượng (interface) được tách riêng ra như một “interface độc lập”:
 - - get_thu_nhap() → mỗi phòng ban sẽ tính khác nhau
 - - get_thue() → có thể được định nghĩa mặc định hoặc trừu tượng nếu mỗi nơi có mức thuế riêng
+- - get_bao_hiem()
+- - get_phuc_loi()
