@@ -45,8 +45,16 @@ o	Phương thức: __init__, __str__, hien_thi_thong_tin() (hiển thị thông 
 - - get_phuc_loi()
 
 ## Bài 6 - NhanVien HR:
-Kế thừa lớp NhanVien và ghi đè - Overwrite các phương thức
-get_thu_nhap() → lương cơ bản
-get_thue() → 10% thu nhập
-get_bao_hiem() → ví dụ 8% lương
-get_phuc_loi() → có thể là 0 hoặc giá trị khác tùy phòng ban
+- Kế thừa lớp NhanVien và ghi đè - Overwrite các phương thức
+- get_thu_nhap() → lương cơ bản
+- get_thue() → 10% thu nhập
+- get_bao_hiem() → ví dụ 8% lương
+- get_phuc_loi() → có thể là 0 hoặc giá trị khác tùy phòng ban
+
+## Bài 7 - NhanVien Sale:
+- Có thêm 2 thuộc tính riêng (vẫn thừa kế NhanVien):
+- - doanh_so – tổng doanh số
+- - hoa_hong – phần trăm hoa hồng (ví dụ: 0.05 = 5%)
+- Công thức thu nhập:
+- - thu_nhap = luong_co_ban + doanh_so * hoa_hong 
+- - thực lãnh = thu nhập - thuế - bảo hiểm + phúc lợi
