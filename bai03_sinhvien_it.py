@@ -34,5 +34,5 @@ class SinhVienIT(SinhVien):
 
 # Demo test khi chạy trực tiếp
 if __name__ == "__main__":
-    sv_it = SinhVienIT("Trần Văn B", 20, "Nam", "IT001", 8.0, 7.5, 9.0)
+    sv_it = SinhVienIT("Trần Văn B", "10/10/2000", "Nam", "IT001", 8.0, 7.5, 9.0)
     sv_it.hien_thi_thong_tin()

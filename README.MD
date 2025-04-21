@@ -111,3 +111,10 @@ Gợi ý tinh chỉnh:
 - Tinh chỉnh class ConNguoi bai01_connguoi.py
 - Xem lại các class có import class ConNguoi theo file mới cập nhật (hoặc ghi đè class cũ)
 - Thay dữ liệu vào là tuổi bằng ngày sinh
+
+🔹 Bài 9:
+- Đổi tên thuộc tính tuổi thành ngay_sinh (trong class ConNguoi) và kiểu dữ liệu là kiểu date.
+- Thực hiện ép kiểu dữ liệu đầu vào là ngày tháng năm (dd/mm/yyyy)
+- Nên bổ sung thêm phương thức get_tuoi, và tuổi được tính là thời gian hiện tại - ngày sinh nhập vào
+- Trong __str__ thêm phương thức `get_tuoi()` thay vì get_tuoi như trước kia
+- Thực hiện test

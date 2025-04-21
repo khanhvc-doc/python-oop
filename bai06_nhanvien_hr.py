@@ -35,5 +35,5 @@ class NhanVienHR(NhanVien):
 # Test hoặc cũng có thể tạo file py riêng để test
 if __name__ == "__main__":
     print("== Demo NhanVienHR ==")
-    nv = NhanVienHR("Nguyen Thi Hoa", 32, "Nữ", "HR001", 10000000)
+    nv = NhanVienHR("Nguyen Thi Hoa", "10/10/2011", "Nữ", "HR001", 10000000)
     nv.hien_thi_chi_tiet()
