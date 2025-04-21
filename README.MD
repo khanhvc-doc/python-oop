@@ -112,14 +112,14 @@ Gợi ý tinh chỉnh:
 - Xem lại các class có import class ConNguoi theo file mới cập nhật (hoặc ghi đè class cũ)
 - Thay dữ liệu vào là tuổi bằng ngày sinh
 
-🔹 Bài 9:
+🔹 Bài 9: (sửa trực tiếp trong code)
 - Đổi tên thuộc tính tuổi thành ngay_sinh (trong class ConNguoi) và kiểu dữ liệu là kiểu date.
 - Thực hiện ép kiểu dữ liệu đầu vào là ngày tháng năm (dd/mm/yyyy)
 - Nên bổ sung thêm phương thức get_tuoi, và tuổi được tính là thời gian hiện tại - ngày sinh nhập vào
 - Trong __str__ thêm phương thức `get_tuoi()` thay vì get_tuoi như trước kia
 - Thực hiện test
 
-🔹 Bài 10:
+🔹 Bài 10: (sửa trực tiếp trong code)
 Thêm thuộc tính dia_chi cho lớp gốc ConNguoi.
 
 Cập nhật các lớp con để kế thừa và sử dụng dia_chi.
@@ -128,3 +128,19 @@ Test lại để đảm bảo các lớp con đều hoạt động ổn định.
 **Gợi ý:**
 - class ConNguoi: Thêm thuộc tính địa chỉ (dia_chi) vào __init__, bổ sung dia_chi vào __str__ 
 - Cập nhật dia_chi vào __init__(bao gồm `super()`) cho các class con (SinhVienKD, NhanVien, NhanVienHR, ...) để thêm tham số dia_chi, và gọi super().__init__(...) đầy đủ
+
+
+🔹 Bài11: Tính đóng gói (Encapsulation):
+Đóng gói (Encapsulation) là kỹ thuật ẩn thông tin bên trong lớp và chỉ cho phép truy cập/thay đổi thông qua các phương thức (getter/setter). **Mục đích**:
+- - Bảo vệ dữ liệu bên trong đối tượng.
+- - Ngăn việc sửa đổi trực tiếp làm hỏng logic.
+- - Kiểm soát cách sử dụng dữ liệu.
+
+***chú ý:*** 
+- - private (__)
+- - protected (_)
+- - public (không có dấu gì trước trên biến)
+
+- Thuộc tính được đánh dấu riêng tư bằng __ 
+- Cung cấp getter/setter thông qua `@property`
+- Kiểm tra hợp lệ cho ho_ten và ngay_sinh
