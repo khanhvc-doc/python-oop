@@ -4,11 +4,12 @@ from bai01_connguoi import ConNguoi
 from bai05_interface_thunhap import IThuNhap
 
 class NhanVien(ConNguoi, IThuNhap):
-    def __init__(self, ho_ten: str, tuoi: int, gioi_tinh: str,
+    def __init__(self, ho_ten: str, ngay_sinh: str, gioi_tinh: str, dia_chi: str,
                  ma_nhan_vien: str, luong_co_ban: float):
-        super().__init__(ho_ten, tuoi, gioi_tinh)
+        super().__init__(ho_ten, ngay_sinh, gioi_tinh, dia_chi)
         self.ma_nhan_vien = ma_nhan_vien
         self.luong_co_ban = luong_co_ban
+        # các bạn tự cập nhật nhé
 
     def __str__(self):
         return (f"{super().__str__()}, Mã NV: {self.ma_nhan_vien}, "

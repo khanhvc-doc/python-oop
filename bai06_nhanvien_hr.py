@@ -3,8 +3,9 @@
 from bai05_nhanvien import NhanVien
 
 class NhanVienHR(NhanVien):
-    def __init__(self, ho_ten: str, tuoi: int, gioi_tinh: str, ma_nhan_vien: str, luong_co_ban: float):
-        super().__init__(ho_ten, tuoi, gioi_tinh, ma_nhan_vien, luong_co_ban)
+    def __init__(self, ho_ten: str, ngay_sinh: str, gioi_tinh: str, dia_chi: str, ma_nhan_vien: str, luong_co_ban: float):
+        super().__init__(ho_ten, ngay_sinh, gioi_tinh, dia_chi, ma_nhan_vien, luong_co_ban)
+        
 
     def get_thu_nhap(self) -> float:
         """Lương cơ bản"""
@@ -35,5 +36,5 @@ class NhanVienHR(NhanVien):
 # Test hoặc cũng có thể tạo file py riêng để test
 if __name__ == "__main__":
     print("== Demo NhanVienHR ==")
-    nv = NhanVienHR("Nguyen Thi Hoa", "10/10/2011", "Nữ", "HR001", 10000000)
+    nv = NhanVienHR("Nguyen Thi Hoa", "10/10/2011", "Nữ", "Thu Duc - HCM", "HR001", 10000000)
     nv.hien_thi_chi_tiet()

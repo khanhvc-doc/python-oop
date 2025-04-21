@@ -4,8 +4,8 @@ from abc import ABC, abstractmethod
 from bai01_connguoi import ConNguoi
 
 class SinhVien(ConNguoi, ABC):
-    def __init__(self, ho_ten: str, tuoi: int, gioi_tinh: str, ma_sinh_vien: str):
-        super().__init__(ho_ten, tuoi, gioi_tinh)
+    def __init__(self, ho_ten: str, ngay_sinh: str, gioi_tinh: str, dia_chi: str,  ma_sinh_vien: str):
+        super().__init__(ho_ten, ngay_sinh, gioi_tinh, dia_chi)
         self.ma_sinh_vien = ma_sinh_vien
 
     def __str__(self):

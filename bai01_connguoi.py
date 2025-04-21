@@ -3,7 +3,7 @@
 from datetime import datetime, date
 
 class ConNguoi:
-    def __init__(self, ho_ten, ngay_sinh, gioi_tinh):
+    def __init__(self, ho_ten, ngay_sinh, gioi_tinh, dia_chi):
         # Ép kiểu nếu truyền vào là chuỗi
         if isinstance(ngay_sinh, str):
             self.ngay_sinh = datetime.strptime(ngay_sinh, "%d/%m/%Y").date()
@@ -13,6 +13,7 @@ class ConNguoi:
             raise ValueError("ngay_sinh phải là date hoặc chuỗi dạng dd/mm/yyyy")
         self.ho_ten = ho_ten
         self.gioi_tinh = gioi_tinh
+        self.dia_chi = dia_chi
 
     def get_tuoi(self):
         today = date.today()
@@ -21,7 +22,7 @@ class ConNguoi:
         )
 
     def __str__(self):
-        return f"Họ tên: {self.ho_ten}, Tuổi: {self.get_tuoi()}, Giới tính: {self.gioi_tinh}"
+        return f"Họ tên: {self.ho_ten}, Tuổi: {self.get_tuoi()}, Giới tính: {self.gioi_tinh}, Địa chỉ: {self.dia_chi}"
 
     def hien_thi_thong_tin(self):
         print(self.__str__())

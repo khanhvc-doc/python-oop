@@ -16,6 +16,7 @@ class NhanVienSales(NhanVien):
         super().__init__(ho_ten, tuoi, gioi_tinh, ma_nhan_vien, luong_co_ban)
         self.doanh_so = doanh_so
         self.hoa_hong = hoa_hong
+        # các bạn tự cập nhật nhé
 
     def get_thu_nhap(self) -> float:
         return self.luong_co_ban + self.doanh_so * self.hoa_hong

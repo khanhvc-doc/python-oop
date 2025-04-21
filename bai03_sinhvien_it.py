@@ -3,9 +3,8 @@
 from bai02_sinhvien import SinhVien
 
 class SinhVienIT(SinhVien):
-    def __init__(self, ho_ten: str, tuoi: int, gioi_tinh: str, ma_sinh_vien: str,
-                 diem_A: float, diem_B: float, diem_C: float):
-        super().__init__(ho_ten, tuoi, gioi_tinh, ma_sinh_vien)
+    def __init__(self, ho_ten, ngay_sinh, gioi_tinh, dia_chi, ma_sinh_vien, diem_A, diem_B, diem_C):
+        super().__init__(ho_ten, ngay_sinh, gioi_tinh, dia_chi, ma_sinh_vien)
         self.diem_A = diem_A
         self.diem_B = diem_B
         self.diem_C = diem_C
@@ -34,5 +33,5 @@ class SinhVienIT(SinhVien):
 
 # Demo test khi chạy trực tiếp
 if __name__ == "__main__":
-    sv_it = SinhVienIT("Trần Văn B", "10/10/2000", "Nam", "IT001", 8.0, 7.5, 9.0)
+    sv_it = SinhVienIT("Trần Văn B", "10/10/2000", "Nam", "Quan 3, HCM", "IT001", 8.0, 7.5, 9.0)
     sv_it.hien_thi_thong_tin()

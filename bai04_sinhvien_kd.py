@@ -29,7 +29,7 @@ class SinhVienKD(SinhVien):
         return (f"{super().__str__()}, Điểm X: {self.diem_X}, "
                 f"Điểm Y: {self.diem_Y}, Điểm Z: {self.diem_Z}, "
                 f"Điểm TB: {self.get_diem():.2f}, Xếp loại: {self.xep_loai()}")
-
+        # các bạn tự cập nhật nhé
     def hien_thi_thong_tin(self):
         print(self.__str__())
 

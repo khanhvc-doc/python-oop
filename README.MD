@@ -118,3 +118,13 @@ Gợi ý tinh chỉnh:
 - Nên bổ sung thêm phương thức get_tuoi, và tuổi được tính là thời gian hiện tại - ngày sinh nhập vào
 - Trong __str__ thêm phương thức `get_tuoi()` thay vì get_tuoi như trước kia
 - Thực hiện test
+
+🔹 Bài 10:
+Thêm thuộc tính dia_chi cho lớp gốc ConNguoi.
+
+Cập nhật các lớp con để kế thừa và sử dụng dia_chi.
+
+Test lại để đảm bảo các lớp con đều hoạt động ổn định.
+**Gợi ý:**
+- class ConNguoi: Thêm thuộc tính địa chỉ (dia_chi) vào __init__, bổ sung dia_chi vào __str__ 
+- Cập nhật dia_chi vào __init__(bao gồm `super()`) cho các class con (SinhVienKD, NhanVien, NhanVienHR, ...) để thêm tham số dia_chi, và gọi super().__init__(...) đầy đủ

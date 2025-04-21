@@ -18,7 +18,8 @@ class TruongPhong(NhanVien):
         self.phu_cap_trach_nhiem = phu_cap_trach_nhiem
         self.he_so_chuc_vu = he_so_chuc_vu
         self.so_nam_cong_tac = so_nam_cong_tac
-
+        # các bạn tự cập nhật nhé
+        
     def get_thu_nhap(self) -> float:
         return self.luong_co_ban * self.he_so_chuc_vu + self.phu_cap_trach_nhiem
 
