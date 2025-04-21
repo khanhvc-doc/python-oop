@@ -144,3 +144,5 @@ Test lại để đảm bảo các lớp con đều hoạt động ổn định.
 - Thuộc tính được đánh dấu riêng tư bằng __ 
 - Cung cấp getter/setter thông qua `@property`
 - Kiểm tra hợp lệ cho ho_ten và ngay_sinh
+
+🔹 Bài 12 – Tính đa hình (Polymorphism)
