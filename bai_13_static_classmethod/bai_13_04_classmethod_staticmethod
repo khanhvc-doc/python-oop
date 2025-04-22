@@ -1,0 +1,62 @@
+'''
+@classmethod – để thay đổi thông tin dùng chung cho tất cả sản phẩm (ví dụ: tên công ty).
+
+@staticmethod – để viết một hàm tiện ích như định dạng giá hoặc kiểm tra dữ liệu.
+
+@property và @setter – để kiểm soát truy cập thuộc tính.
+'''
+class SanPham:
+    cong_ty = "Công ty ABC"  # Biến class (chung cho mọi sản phẩm)
+
+    def __init__(self, ten, gia):
+        self.ten = ten
+        self._gia = gia  # Đặt làm _gia để dùng @property
+
+    @property
+    def gia(self):
+        return self._gia
+
+    @gia.setter
+    def gia(self, gia_moi):
+        if gia_moi >= 0:
+            self._gia = gia_moi
+        else:
+            raise ValueError("Giá phải là số không âm.")
+
+    def hien_thi(self):
+        print(f"{self.ten} | Giá: {self._gia:,.0f} VND | Công ty: {SanPham.cong_ty}")
+
+    @classmethod
+    def doi_ten_cong_ty(cls, ten_moi):
+        cls.cong_ty = ten_moi
+
+    @staticmethod
+    def dinh_dang_gia(gia):
+        return f"{gia:,.0f} VND"
+
+    @staticmethod
+    def kiem_tra_ten(ten):
+        return ten.strip() != "" and len(ten) >= 3
+
+
+# Test
+if __name__ == "__main__":
+    # Tạo sản phẩm
+    sp1 = SanPham("Laptop Dell", 20000000)
+
+    # Hiển thị
+    sp1.hien_thi()
+
+    # Đổi tên công ty (dùng classmethod)
+    SanPham.doi_ten_cong_ty("Công ty Công Nghệ XYZ")
+    sp1.hien_thi()
+
+    # Dùng staticmethod - định dạng giá
+    print("Định dạng giá:", SanPham.dinh_dang_gia(15000000))
+
+    # Kiểm tra tên sản phẩm
+    print("Tên hợp lệ?", SanPham.kiem_tra_ten("Tủ lạnh"))
+
+    # Setter thử
+    sp1.gia = 25000000
+    sp1.hien_thi()
